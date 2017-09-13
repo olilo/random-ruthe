@@ -1,13 +1,16 @@
-/**
- * Created by oliver on 11.09.2017.
- */
-
 $(function() {
     function randomRuthe() {
-        var stripNumber = Math.floor(Math.random() * 3121);
-        $('#comic').attr('src', 'http://www.ruthe.de/cartoon/' + stripNumber);
+        var stripNumber = Math.floor(Math.random() * 2067);
+        var stripNumberString = "" + stripNumber;
+        while (stripNumberString.length < 4) {
+            stripNumberString = "0" + stripNumberString;
+        }
+        var img = new Image();
+        img.src = "http://www.ruthe.de/cartoons/strip_" + stripNumberString + ".jpg";
+        img.className="d-block mx-auto";
+        $("#comic").html("").append(img);
     }
 
-    $('#new-comic').click(randomRuthe);
+    $('#new-ruthe-comic').click(randomRuthe);
     randomRuthe();
 });
