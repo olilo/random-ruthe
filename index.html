@@ -8,13 +8,20 @@
             crossorigin="anonymous"></script>
     <!--<script src="js/bootstrap.min.js"></script>-->
     <script src="js/script.js"></script>
+    <style>
+        @media (min-width: 0px) and (max-device-width: 576px) {
+            .img-sm-full-width img {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="row">
-        <div class="col-3">
+        <div class="col-lg-3 col-sm-12">
             <input id="new-ruthe-comic" class="btn btn-primary d-block mx-auto mt-4" type="submit" value="Zufälliger Ruthe comic">
         </div>
-        <div class="col-6">
+        <div class="col-lg-6 col-sm-12 img-sm-full-width">
             <div id="comic"></div>
         </div>
     </div>

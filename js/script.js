@@ -12,5 +12,6 @@ $(function() {
     }
 
     $('#new-ruthe-comic').click(randomRuthe);
+    $('#comic').click(randomRuthe);
     randomRuthe();
 });
