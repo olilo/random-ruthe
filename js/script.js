@@ -8,7 +8,7 @@ $(function() {
             stripNumberString = "0" + stripNumberString;
         }
         var img = new Image();
-        img.src = "http://www.ruthe.de/cartoons/strip_" + stripNumberString + ".jpg";
+        img.src = "https://www.ruthe.de/cartoons/strip_" + stripNumberString + ".jpg";
         img.className="d-block mx-auto";
         $("#comic").html("").append(img);
     }
