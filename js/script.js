@@ -1,6 +1,8 @@
 $(function() {
     function randomRuthe() {
-        var stripNumber = Math.floor(Math.random() * 2067);
+	// this is taken directly from the page, should be fetched dynamically (somehow)
+	var maxStripNumber = 2309;
+        var stripNumber = Math.floor(Math.random() * maxStripNumber);
         var stripNumberString = "" + stripNumber;
         while (stripNumberString.length < 4) {
             stripNumberString = "0" + stripNumberString;
